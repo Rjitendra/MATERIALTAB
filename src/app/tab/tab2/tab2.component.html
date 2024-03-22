@@ -1,0 +1,21 @@
+<div class="border">
+<form [formGroup]="educationGroup">
+  <div formArrayName="education">
+    <div *ngFor="let studentCtrl of educationArray.controls; let i = index" [formGroupName]="i">
+      <label for="schoolName">Student Name: </label>
+      <input formControlName="schoolName" placeholder="schoolName">
+      <label for="qualification">qualification: </label>
+      <input formControlName="qualification" placeholder="qualification">
+      <label for="passoutYear">passoutYear: </label>
+      <input formControlName="passoutYear" placeholder="passoutYear">
+      <label for="percentage">percentage: </label>
+      <input formControlName="percentage" placeholder="percentage">
+    </div>
+  </div>
+  <button type="button" (click)="formArrayAdd()">Add</button>
+</form>
+
+<hr>
+<p>Form Status: {{ educationGroup.status }}</p>
+
+</div>

@@ -1,0 +1,13 @@
+form {
+    padding-top: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin: .5em 0;
+    font-weight: bold;
+  }
+  .border{
+    border: 1px solid black; 
+    margin: 1rem; padding: 1rem;
+}

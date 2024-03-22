@@ -1,0 +1,6 @@
+<mat-tab-group>
+  <mat-tab label="Personal Details"> <app-tab1 (formValid)="formValid($event)"></app-tab1></mat-tab>
+  <mat-tab label="Education Details"> <app-tab2 (formValid)="formValid($event)"></app-tab2> </mat-tab>
+  <mat-tab label="Experience Details"> <app-tab3 (formValid)="formValid($event)"></app-tab3></mat-tab>
+</mat-tab-group>
+<p>Form Value: {{ completeForm | json }}</p>
